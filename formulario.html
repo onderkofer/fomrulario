@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    padding: 0;
+}
+            body{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                background:linear-gradient(#0096c7,#023e8a);
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                border-style: solid;
+                border-color: black;
+                border-radius: 10px;
+                align-items: center;
+                background-color: #ffffff20;
+            }
+            input{
+                width: 220px;
+                height: 30px;
+                margin: 20px;
+                margin-top: 25px;
+                border-radius: 10px;
+            }
+            .boxBox{
+                margin-top: 20px;
+                width: 400px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                border-radius: 10px;
+                background-color: #023e8a;
+            }
+            label{
+                width: 100%;
+                margin-left: 20px;
+                font-size: 20px;
+            }
+
+            #digi{
+                width: 40px;
+            }
+            #notification{
+                width: 40px;
+            }
+            #sexo{
+                width: 45px;
+            }
+            #sexo2{
+                width: 45px;
+            }
+
+    </style>
+</head>
+<body>
+    <form action="#">
+
+    <div class="boxBox">
+        <label for="name">Name and surname</label>
+        <input type="text" name="name" id="name">
+        <h3 id="nombre"></h3>
+    </div>
+
+    <div class="boxBox">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <h3 id="correo"></h3>
+    </div>
+
+    <div class="boxBox">
+        <label for="pass">Password</label>
+        <input type="text" name="pass" id="pass">
+        <h3 id="contrase"></h3>
+    </div>
+
+    <div class="boxBox">
+        <label for="passConf">Confirm password</label>
+        <input type="text" name="passConf" id="passConf">
+        <h3 id="contrase2"></h3>
+    </div>
+
+    <div class="boxBox">
+        <label for="sexo">Sex</label>
+        <input type="checkbox" name="sexo" id="sexo">Male</input>
+        <input type="checkbox" name="sexo2" id="sexo2">Female</input>
+    </div>
+
+    <div class="boxBox">
+        <label for="birth">Birthday date</label>
+        <input type="date" name="birth" id="birth">
+    </div>
+
+    <div class="boxBox">
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address">
+    </div>
+
+    <div class="boxBox">
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country">
+        <h3></h3>
+    </div>
+
+    <div class="boxBox">
+        <label for="creditCard">Credit Card number</label>
+        <input type="number" name="creditCard" id="creditCard">
+    </div>
+
+    <div class="boxBox" id="notifi">
+        <label for="notification">Accept notifications</label>
+        <input type="checkbox" name="notification" id="notification">
+    </div>
+
+    <div class="boxBox" id="digital">
+        <label for="digi">Digital magazine</label>
+        <input type="checkbox" name="digi" id="digi">
+    </div>    
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+
+    <script src="formulario.js"></script>
+</body>
+</html>
